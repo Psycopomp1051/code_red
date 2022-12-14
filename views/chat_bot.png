@@ -1,0 +1,52 @@
+//- doctype html
+//- html(lang='en')
+//-   head
+//-     meta(charset='UTF-8')
+//-     meta(http-equiv='X-UA-Compatible' content='IE=edge')
+//-     meta(name='viewport' content='width=device-width, initial-scale=1.0')
+//-     title Chat Bot
+//-     link(rel='stylesheet' href='statics/chat.css')
+//-     link(rel='stylesheet' href='statics/home.css')
+//-     link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+//-   body
+extends base.pug
+
+block scripts
+
+    script(src='index.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='./models/responses.js')
+    script(src='./models/chat.js')
+block style 
+    style 
+        include ../statics/style.css
+        include ../statics/contact.css
+        include ../statics/faq.css
+        include ../statics/chat.css
+        include ../statics/home.css
+block content 
+
+    // CHAT BAR BLOCK
+    .chat-bar-collapsible
+        button#chat-button.collapsible(type='button')
+            | Chat with us!
+            i#chat-icon.fa.fa-fw.fa-comments-o(style='color: #fff;')
+    .content
+        .full-chat-block
+            // Message Container
+            .outer-container
+                .chat-container
+                    // Messages
+                    #chatbox
+                        h5#chat-timestamp
+                        p#botStarterMessage.botText
+                    // User input box
+                    .chat-bar-input-block
+                        #userInput
+                            input#textInput.input-box(type='text' name='msg' placeholder="Tap 'Enter' to send a message")
+                            p
+                        .chat-bar-icons
+                            i#chat-icon.fa.fa-fw.fa-heart(style='color: crimson;' onclick='heartButton()')
+                            i#chat-icon.fa.fa-fw.fa-send(style='color: #333;' onclick='sendButton()')
+                    #chat-bar-bottom
+                        p

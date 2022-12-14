@@ -1,0 +1,176 @@
+.ec_calculator_gen.clearfix.ovulation-calculator.ovcalc{
+    /* box */
+
+    background-color: #fcd3ff;
+    border-radius: 5px;
+}
+/* .page-template-template-caculator-period #calculate { */
+    /* background-color: #00bbd3;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #555;
+    display: inline-block;
+    font-family: 'Droid Serif',sans-serif;
+    font-size: inherit;
+    font-weight: 400;
+    margin: 0;
+    min-width: 150px;
+    color: #fff;
+    background: -webkit-linear-gradient(top,#00bbd3,#0460ad);
+    background: -moz-linear-gradient(top,#00bbd3,#0460ad);
+    background: -ms-linear-gradient(top,#00bbd3,#0460ad);
+    background: -o-linear-gradient(top,#00bbd3,#0460ad);
+    padding: 12px;
+} */
+.stpbtn #calculate{
+    height: 55px;
+    border-radius: 5px;
+    display: flex;
+    position: absolute;
+    right: 835px;
+    font-size: 22px;
+}
+
+/* .paneltitle{
+    /* background-color: #AAC4FF; */
+
+
+.datecover{
+    background-color: aqua;
+    /* align-items: flex-start; */
+    display: flex;
+    /* text-align: center; */
+    /* align-content: center; */
+    padding: 15px 29px;
+    margin: 19px;
+    border-radius: 4px;
+}
+#ipd{
+    height: 40px; 
+    width: 824px;
+}
+.ui-datepicker-trigger{
+    height: 50px;
+    background-image: url(https://wallpapercave.com/wp/wp5310633.jpg);
+}
+#cycle{
+    height: 50px;
+}
+#cycle_lasts{
+    height: 50px;
+}
+.cycle{
+    height: 70px;
+    /* direction: ltr; */
+    /* align-content: center; */
+    /* display: flex; */
+    text-align: center;
+}
+
+#id{
+    font-size: 44px;
+    font-weight: bolder;
+    
+}
+#heading{
+    font-size: 24px;
+}
+
+.page-template-template-caculator-period thead td {
+    width: 10%;
+    font-weight: 700;
+    text-align: center;
+    border: 1px dotted #cec;
+}
+td, th {
+    padding: 0;
+}
+caption, td, th {
+    font-weight: 400;
+    text-align: left;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+td, th {
+    padding: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.page-template-template-caculator-period #userpoints thead tr {
+    background-color: #00bbd3;
+    color: #fff;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+#bmed-menstruation-period-result-table.bmed-tools-result-table{
+    background-color: rgb(9, 251, 223);
+    font-size: 20px;
+    text-align: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.table_cover {
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    table-layout: fixed;
+    background-color: rgb(225, 243, 166);
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+.table_cover#userpoints tbody td {
+    border: 1px solid #cec;
+    padding: 8px 0;
+}
+#userpoints{
+    padding: 12px 34px;
+    margin: 34px 143px;
+    border: 1px solid blue;
+}
+  .table_cover#username th {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-color: gainsboro;
+    padding: .27rem;
+  }
+  .table_cover td {
+    background-color: rgb(185, 186, 129);
+    padding: 1.29rem;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }

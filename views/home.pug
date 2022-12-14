@@ -1,0 +1,176 @@
+extends base.pug
+
+block scripts
+  script(src='index.js')
+  script(src='./models/social.js')
+
+
+block style 
+  style 
+    include ../statics/style.css
+    include ../statics/contact.css
+    include ../statics/faq.css
+    include ../statics/animation.css
+    include ../statics/animation2.css
+    include ../statics/chat.css
+    include ../statics/home.css
+    include ../statics/ourteam.css
+    include ../statics/social.css
+    include ../statics/social2.css
+    include ../statics/ourteam1.css
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link.col(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css' integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous")
+block content 
+  aside#sticky-social
+    ul
+      li
+        a.entypo-facebook(href='#' target='_blank')
+          span Facebook
+      li
+        a.entypo-twitter(href='https://twitter.com/0mahbuhs0' target='_blank')
+          span Twitter
+      li
+        a.entypo-gplus(href='https://www.google.co.in/' target='_blank')
+          span Google+
+      li
+        a.entypo-linkedin(href='https://www.linkedin.com/in/prajakta-sangolkar-a75271248/' target='_blank')
+          span LinkedIn
+      li
+        a.entypo-instagrem(href='#' taget='_blank')
+          span Instagram
+  section#introSection 
+    .content
+      h2  Period
+      h2  Period
+
+    .waviy
+      span(style='--i:1') T 
+      span(style='--i:2') H
+      span(style='--i:3') E
+      span(style='--i:4')   -
+      span(style='--i:5') M
+      span(style='--i:6') E
+      span(style='--i:7') N
+      span(style='--i:8') S
+      span(style='--i:9') T
+      span(style='--i:10') R
+      span(style='--i:11') U
+      span(style='--i:12') A
+      span(style='--i:13') L 
+      span(style='--i:14') _
+      span(style='--i:15') C
+      span(style='--i:16') Y
+      span(style='--i:17') C 
+      span(style='--i:18') L
+      span(style='--i:19') E
+
+
+      //- div.small    The real Period is about healthy functioning of your ovaries
+  section#missionSection 
+    br
+    div(style='')
+    iframe(allow='autoplay; gyroscope;' allowfullscreen='' height='85%' referrerpolicy='strict-origin' src='https://www.kapwing.com/e/635e3f57b89b910017d43a46' video{object-fit: contain;width: 100%;height: 100%; },  width='100%')
+    //- <div style="height: 0; padding-bottom: calc(56.25%); position:relative; width: 100%;"><iframe allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin" src="https://www.kapwing.com/e/635e3f57b89b910017d43a46" style="border:0; height:100%; left:0; overflow:hidden; position:absolute; top:0; width:100%" title="Embedded content made on Kapwing" width="100%"></iframe></div>
+  
+  section#FAQ
+    h1.title FAQ&apos;s
+    .container1
+      .container
+        h1 Frequently Asked Questions
+        details
+          summary What Is Menstruation?
+          div
+            | In simple terms, it’s when the vagina discharges blood and other tissue approximately once a month.
+            
+      .container
+        details
+          summary Why Do I Get a Period?
+          div
+            | A period (menstruation) is normal vaginal bleeding that is a natural part of a healthy monthly cycle for a person with a uterus and ovaries.
+           
+      .container
+        details
+          summary .How Long Does a Period Last?
+          div
+            | The average period lasts between 4 and 8 days
+      .container
+        details
+          summary When Do Girls Usually First Get Their Period?
+          div
+            | Menstruation can begin anytime between 8 and 15.
+      .container
+        details
+          summary What causes irregular periods?
+          div
+            | Irregular periods mostly cause because excessive stress, extreme exercising.
+      
+  section#sponsorsSection
+    h2 Our Team
+      .main
+        .profile-card
+        
+          .img
+            img(src="https://i.ibb.co/S03SDch/Screenshot-2022-11-05-015912.png", alt="sak",height="170px" border="1px")
+           
+          .caption
+            h3 Prajakta 
+            p Prajakta Sangolkar
+            p Front End & Back End Developer
+            .social-links
+              a(href='#')
+                i.fab.fa-facebook
+              a(href='#')
+                i.fab.fa-instagram
+              a(href='#')
+                i.fab.fa-twitter
+        .profile-card
+          .img
+            img(src="https://i.ibb.co/7NWyr0y/sak.jpg", alt="sak",height="170px" border="1px")
+          .caption
+            h3 Sak
+            p  Sakshi Nikharge
+            p  Quality Assurance
+            .social-links
+
+              a(href='#')
+                i.fab.fa-facebook
+              a(href='#')
+                i.fab.fa-instagram
+              a(href='#')
+                i.fab.fa-twitter
+        .profile-card
+          .img
+         
+            img(src="https://i.ibb.co/TPfrq2j/Screenshot-2022-11-05-013519.png", alt="sak",height="170px" border="1px")
+          .caption
+            h3 Sakshi
+            p  Sakshi More
+            p  Senior Front End Developer
+            .social-links
+
+              a(href='#')
+                i.fab.fa-facebook
+              a(href='#')
+                i.fab.fa-instagram
+              a(href='#')
+                i.fab.fa-twitter
+        
+          
+        .profile-card
+          .img
+          
+            img(src="https://i.ibb.co/tqXRzw0/Screenshot-2022-11-05-014054.png", alt="sak",height="170px" border="1px")
+          .caption
+            h3 Shubham
+            p  Shubham Sonawane
+            p  Project Manager and Front end Developer
+            .social-links
+
+              a(href='#')
+                i.fab.fa-facebook
+              a(href='#')
+                i.fab.fa-instagram
+              a(href='#')
+                i.fab.fa-twitter
+          
+    script(src='./Font-Awesome/all.min.js')

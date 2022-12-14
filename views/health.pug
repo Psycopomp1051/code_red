@@ -1,0 +1,18 @@
+extends base.pug
+
+block scripts
+   script(src='index.js')
+block style 
+  style 
+    include ../statics/style.css
+    include ../statics/health.css
+    
+block content 
+  .container
+    h1 Which information do you want to persue?
+    .sub-container
+      a(href='/firsthealth')
+        button.btn(type='button' name='button') Diseases
+      a(href='/secondhealth')
+        button.btn(type='button' name='button') Medicines
+  

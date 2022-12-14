@@ -1,0 +1,20 @@
+extends base.pug
+
+block scripts
+   script(src='index.js')
+block style 
+  style 
+    include ../statics/style.css
+    include ../statics/dietplan.css
+    
+block content 
+  
+    .container
+      h1 Which Age Group Do You Belong?
+      .sub-container
+        a(href='/firstgroup')
+          button.btn(type='button', name='button') Below 20
+        a(href='/secondgroup')
+          button.btn(type='button', name='button') Between 20-35
+        a(href='/thirdgroup')
+          button.btn(type='button', name='button') Between 35-50

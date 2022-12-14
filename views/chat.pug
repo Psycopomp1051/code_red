@@ -1,0 +1,43 @@
+//- doctype html
+
+//- head
+//-   title register Form
+//-   style
+//-       include ../statics/chat.css 
+ 
+doctype html
+head
+  title Chatbot Javascript 
+//- block scripts
+//-   script(src='./chat.js')
+block style
+  style
+      include ../statics/chat1.css
+.glass
+  h1 Ask Your Question??
+  br
+  h2 Yeah,ask Some Question
+  .input
+    input#userBox(type='text' onkeydown='if(event.keyCode == 13){ talk()}' placeholder='Type your Question')
+  p#chatLog 
+  //-  p#chatLog Answer Appering Hear
+script.
+  function talk(){
+    var know = {
+    "Who are you" : "Hello, Codewith_random here ",
+    "How are you" : "Good :)",
+    "How to check my next date":" Go to Calender page and enter your details",
+    "Where can i buy tampons":"In shopping page click on product and you will get link",
+    "What can i do for you" : "Please Give us A Follow & Like.",
+    "Your followers" : "I have my family of 5000 members, i don't have follower ,have supportive Famiy ",
+    "ok" : "Thank You So Much ",
+    "Bye" : "Okay! Will meet soon.."
+    };
+    var user = document.getElementById('userBox').value;
+    document.getElementById('chatLog').innerHTML = user + "<br>";
+    if (user in know) {
+    document.getElementById('chatLog').innerHTML = know[user] + "<br>";
+    }else{
+    document.getElementById('chatLog').innerHTML = "Sorry,I didn't understand <br>";
+    }
+    }

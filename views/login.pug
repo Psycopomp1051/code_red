@@ -1,0 +1,76 @@
+//- extends base.pug
+
+//- block scripts
+//-     script(src='/statics/index.js')
+
+//- block style 
+//-     style 
+//-         include ../statics/style.css
+//-         include ../statics/login.css
+//- block content 
+//-  head
+//-   body
+//-      h2 Login Page
+//-         br
+//-         .login
+//-          form#login(method='post' action='/login')
+//-          b
+//-         | User Name
+//-         input#Uname(type='text' name='Uname' placeholder='Username')
+//-         br
+//-         br
+//-         label
+//-             b
+        
+//-         | Password
+//-         input#Pass(type='Password' name='Pass' placeholder='Password')
+//-         br
+//-         br
+       
+//-         button#log(name='log') Log In Here
+//-         |         {{!-- 
+//-         input#log(type='button' name='log' value='Log In Here')
+//-         |         --}}
+//-         br
+//-         br    
+       
+//-         input#check(type='checkbox')
+//-         span Remember me
+    
+//-          input#log(type='button' name='log' value='Log In Here')
+//-          |         Forgot 
+//-         a(href='#') Password
+
+doctype html
+head
+  title Login Form
+  style
+      include ../statics/login.css
+h2 Login Page
+br
+.login
+  form#login(method='post' action='/login')
+    label
+      b
+        | User Name
+    input#Uname(type='text' name='email' placeholder='Email')
+    br
+    br
+    label
+      b
+        | Password
+    input#Pass(type='Password' name='password' placeholder='Password')
+    br
+    br
+    button#log(name='log') Log In Here
+    
+    br
+    br
+    input#check(type='checkbox')
+    span Remember me
+    //- br
+    //- br
+    //- |         Forgot 
+    //- a(href='#') Password
+
+ 

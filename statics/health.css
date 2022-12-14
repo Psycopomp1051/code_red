@@ -1,0 +1,29 @@
+.container{
+    margin: 100px;
+    padding: 90px 100px;
+    background-color: skyblue;
+    height: 400px;
+    font-size: 2.2em;
+  }
+  
+  .sub-container{
+    padding: 20px 102px;
+    font-weight: bold;
+  }
+  
+  .btn{
+    padding: 15px;
+    margin: 14px 25px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: orange;
+    color: black;
+  
+  }
+  .btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+  
